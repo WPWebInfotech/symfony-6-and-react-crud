@@ -1,0 +1,200 @@
+/* src/styles.css */
+
+/* General styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+/* App container */
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-top: 30px;
+  /* Space from top */
+}
+
+/* Branding at the top */
+.branding {
+  background-color: #2e3b4e; /* Darker background for branding */
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.branding strong {
+  color: #ffcc00; /* Highlight React and Symfony */
+}
+
+/* Form container styling */
+.form-container {
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Add Task form styling */
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Error message styling */
+div[style="color: red"] {
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+
+/* List container styling */
+.list-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 10px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+li button {
+  padding: 5px 10px;
+  border: none;
+  background-color: #f44336;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+li button:active {
+  background-color: #c62828;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  font-size: 1rem;
+  color: #666;
+  margin-top: 30px;
+  padding: 10px 0;
+  border-top: 2px solid #ddd;
+  background-color: #2e3b4e;
+  color: white;
+  border-radius: 8px;
+}
+
+.footer p {
+  margin: 5px;
+}
+
+.footer-icon {
+  font-size: 1.5rem;
+  margin-top: 5px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .app-container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  input {
+    font-size: 0.9rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+  }
+}
+
+.add-task-form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adjust spacing between input and button */
+}
+
+.task-input {
+  flex: 1; /* Make input take up available space */
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-btn {
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+  font-size: 14px;
+}

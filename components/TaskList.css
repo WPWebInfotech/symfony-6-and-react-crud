@@ -1,0 +1,119 @@
+/* Container styling */
+.task-list-container {
+  max-width: 600px;
+  margin: 0 auto;
+  height: 180px; /* Set a fixed height */
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding-right: 15px; /* Prevent the scrollbar from overlaying the content */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+/* Custom Scrollbar Styling */
+.task-list-container::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+.task-list-container::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Track background color */
+  border-radius: 10px; /* Rounded corners for the track */
+}
+
+.task-list-container::-webkit-scrollbar-thumb {
+  background-color: #888; /* Thumb (draggable part) color */
+  border-radius: 10px; /* Rounded corners for the thumb */
+  border: 2px solid #f1f1f1; /* Border around the thumb to make it stand out */
+}
+
+.task-list-container::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Darker color when hovering over the thumb */
+}
+
+/* List item styling */
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+}
+
+/* Task title */
+.task-title {
+  flex: 1;
+  font-size: 16px;
+  color: #333;
+  word-break: break-word;
+}
+
+/* Button container */
+.task-actions {
+  display: flex;
+  gap: 10px;
+}
+
+/* General button styling */
+button {
+  padding: 5px 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Edit and delete buttons */
+.edit-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Edit form */
+.edit-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+/* Input for editing */
+.edit-input {
+  flex: 1; /* Make input field take up available space */
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 200px; /* Set a fixed width for consistency */
+}
+
+/* Save button */
+.save-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+/* Cancel button */
+.cancel-btn {
+  background-color: #ccc;
+  color: black;
+}
+
+.cancel-btn:hover {
+  background-color: #bbb;
+}
+
+/* No Task Message */
+.no-task-message{
+  text-align: center;
+}
